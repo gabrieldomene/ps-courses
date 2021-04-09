@@ -17,6 +17,10 @@ export default {
   props: {
     msg: String,
   },
+  created() {
+    console.log(process.env.SOME_TEST);
+    console.log(process.env.NODE_ENV);
+  },
 };
 </script>
 
